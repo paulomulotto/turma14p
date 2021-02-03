@@ -1,0 +1,7 @@
+package br.com.votacao.beans;
+
+public class Voto {
+	private Pessoa eleitor;
+	private Pessoa candidato;
+	private boolean primeiroTurno;
+}

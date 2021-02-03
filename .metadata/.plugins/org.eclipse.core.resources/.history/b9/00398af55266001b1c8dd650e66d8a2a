@@ -1,0 +1,23 @@
+package br.com.votacao.principal;
+
+import br.com.votacao.beans.Candidato;
+import br.com.votacao.beans.Eleitor;
+import br.com.votacao.beans.Urna;
+import br.com.votacao.beans.Voto;
+
+public class ImplementarVoto {
+
+	public static void main(String[] args) {
+		Urna urna = new Urna(1, 2, "CIDADE ZONA 1 SECAO 2");
+		
+		
+		Pessoa eleitor = new Pessoa();
+		eleitor = new Eleitor("NOME 1", 1, true);
+		
+		Pessoa candidato = new Candidato("NOME 2", 1, "PREFEITO", "ÉNOIX");
+		Voto voto = new Voto(); 
+		
+
+	}
+
+}

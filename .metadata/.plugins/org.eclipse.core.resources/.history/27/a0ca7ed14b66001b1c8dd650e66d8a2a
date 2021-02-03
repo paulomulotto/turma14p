@@ -1,0 +1,16 @@
+package br.com.colecoes.implementacao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import br.com.colecoes.beans.Cargo;
+
+public class TesteMap {
+
+	public static void main(String[] args) {
+		Map<Integer, Cargo> lista = new HashMap<Integer, Cargo>();
+		
+
+	}
+
+}

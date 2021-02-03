@@ -1,0 +1,13 @@
+package br.com.colecoes.implementacao;
+
+import java.util.Map;
+
+public class TesteMap {
+
+	public static void main(String[] args) {
+		Map<> lista = new HashMap<>();
+		
+
+	}
+
+}

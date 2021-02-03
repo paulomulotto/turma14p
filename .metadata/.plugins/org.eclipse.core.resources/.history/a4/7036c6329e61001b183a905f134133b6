@@ -1,0 +1,34 @@
+package br.com.concessionaria.modelo;
+
+public class Veiculo {
+
+	private String modelo;
+	private String placa;
+	private float valor;
+	private boolean status;
+	private float velocidadeAtual;
+	
+	// Sintaxe dos metodos
+	// <modificador> <Tipo do Retorno> <nome do metodo> (<Tipo do Parametro> <Nome do Parametro){
+	
+	public void preencherModelo(String param) {
+		if (param.length()>5) {
+			modelo = param.substring(0,5);
+		}else {
+			modelo = param.toUpperCase();
+		}
+	}
+	
+	public String retornarModelo() {
+		return modelo;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

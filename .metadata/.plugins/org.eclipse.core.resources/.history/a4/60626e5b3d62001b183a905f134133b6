@@ -1,0 +1,30 @@
+package br.com.elevadores.teste;
+
+import br.com.elevadores.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+		Elevador elevador = new Elevador();
+		
+		elevador.in
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

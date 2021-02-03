@@ -1,0 +1,48 @@
+package br.com.universidade.beans;
+
+public class Bacharelado extends Formacao{
+
+	private String projetoConclusao;
+	private int cargaHorariaEstagio;
+	
+	public void calcularMensalidade(double fator) {
+		
+	}
+	
+	public String getProjetoConclusao() {
+		return projetoConclusao;
+	}
+	public void setProjetoConclusao(String projetoConclusao) {
+		this.projetoConclusao = projetoConclusao;
+	}
+	public int getCargaHorariaEstagio() {
+		return cargaHorariaEstagio;
+	}
+	public void setCargaHorariaEstagio(int cargaHorariaEstagio) {
+		this.cargaHorariaEstagio = cargaHorariaEstagio;
+	}
+	public Bacharelado(String descricao, int periodo, double mensalidade, int duracao, String projetoConclusao,
+			int cargaHorariaEstagio) {
+		super(descricao, periodo, mensalidade, duracao);
+		this.projetoConclusao = projetoConclusao;
+		this.cargaHorariaEstagio = cargaHorariaEstagio;
+	}
+	public Bacharelado() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "Bacharelado [projetoConclusao=" + projetoConclusao + ", cargaHorariaEstagio=" + cargaHorariaEstagio
+				+ "," + super.toString() + "]";
+	}
+	public void setAll(String descricao, int periodo, double mensalidade, int duracao, String projetoConclusao,
+			int cargaHorariaEstagio) {
+		super.setAll(descricao, periodo, mensalidade, duracao);
+		this.projetoConclusao = projetoConclusao;
+		this.cargaHorariaEstagio = cargaHorariaEstagio;
+	}
+
+
+
+
+}

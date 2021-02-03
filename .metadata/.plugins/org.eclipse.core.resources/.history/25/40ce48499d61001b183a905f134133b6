@@ -1,0 +1,50 @@
+package br.com.concessionaria.teste;
+
+import javax.swing.JOptionPane;
+import br.com.concessionaria.modelo.Veiculo;
+
+public class TesteVeiculo {
+
+	public static void main(String[] args) {
+		// Instanciando um objeto
+		Veiculo objeto = new Veiculo();
+		objeto.preencherModelo(JOptionPane.showInputDialog("Digite o modelo"));
+		System.out.println(objeto.retornarModelo());
+		
+		
+		
+		//Criando um objeto
+		//String nome;
+		//Veiculo carro;
+		//carro.preencherModelo("UNO");
+		
+		
+		// Instanciando um objeto
+		//String nome2 = new String();
+		//Veiculo carro2 = new Veiculo();
+		//carro2.modelo="UNO";
+		
+		
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

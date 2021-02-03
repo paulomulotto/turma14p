@@ -1,0 +1,6 @@
+package br.com.votacao.beans;
+
+public class Pessoa {
+	private String nome;
+
+}

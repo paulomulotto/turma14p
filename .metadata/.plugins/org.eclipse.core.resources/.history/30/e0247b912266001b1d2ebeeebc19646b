@@ -1,0 +1,20 @@
+package br.com.excecao.teste;
+
+public class TesteExcecao {
+
+	public static void main(String[] args) {
+		try {
+			int numero = Integer.parseInt("1");
+		
+			System.out.println("Numero: " + numero);
+			
+			String palavra = "";
+			System.out.println("Qtde letras: " + palavra.length());
+		}
+		catch(Exception e) {
+			System.out.println("Deu ruim");
+			e.printStackTrace();
+		}
+	}
+
+}

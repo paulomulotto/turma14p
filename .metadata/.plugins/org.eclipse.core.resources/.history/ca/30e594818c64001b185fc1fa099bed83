@@ -1,0 +1,65 @@
+package br.com.ecommerce.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.ecommerce.beans.Cliente;
+import br.com.ecommerce.beans.Endereco;
+import br.com.ecommerce.beans.Pagamento;
+import br.com.ecommerce.beans.Produto;
+import br.com.ecommerce.beans.Venda;
+
+public class ImplementarVenda {
+
+
+	
+	public static void main(String[] args) {
+		
+		Venda venda = new Venda(
+				i("Id"),
+				new Cliente(
+						s("Nome"),
+						new Endereco(
+								s("Logradouro"),
+								s("Numero da Casa"),
+								"ALLIANCE PARK",
+								"AGUA BRANCA",
+								"SÃO PAULO",
+								"SP",
+								"12345-111"
+								),
+						"1234-4321"
+						),
+				new Produto(
+						1,
+						"CHURROS",
+						15,
+						10,
+						100
+						),
+				"10/10/2020",
+				1500,
+				new Pagamento(
+						"VISTA",
+						"1500"
+						)
+				);
+		
+		
+		System.out.println();
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

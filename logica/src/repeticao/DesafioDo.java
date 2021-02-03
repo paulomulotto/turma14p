@@ -1,0 +1,98 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+/*
+ * Momento flashback
+ * Decisao Simples // recomendado para uma condição única sobre um dado
+ * if (<condicao>){
+ * 
+ * }
+ * 
+ * Decisao Composta // recomendado quando precisa de várias perguntas sobre o mesmo dado
+ * if (<condicao>){
+ * 
+ * }else{
+ * 
+ * }
+ * 
+ * Decisao Encadeada // recomendada quando você pergunta pra mais de um dado (relacionados)
+ * if (<condicao>){ // um dado
+ * 		if (<condicao>) { // o outro dado
+ * 
+ * 		}
+ * }
+ * 
+ * 
+ * Repetições
+ * 
+ * while (<condicao>) {
+ * 
+ * }
+ * 
+ * 
+ * do {
+ * 
+ * }while(<condicao>);
+ */
+	public static void main(String[] args) {
+		
+		/*
+		 * Game:
+		 * Jogador1 => vai digitar um número
+		 * Jogador2 => tem que descobrir o número digitado pelo Jogador1
+		 * 
+		 * Quando o Jogador2 acertar, você vai exibir uma mensagem de Parabéns!!!
+		 * 
+		 * Missao 2:
+		 * Você implementar dicas para o Jogador2 ("O número é maior" - "O número é menor")
+		 * 
+		 * Missao 3:
+		 * Quando o Jogador2 acertar, você vai exibir quantas tentativas ele usou.
+		 * Dica: vai ter que utilizar uma variável pra contar
+		 */
+		// x = x + 1;
+		
+		int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite o número"));
+		int chute = 0;
+		int contador=0;
+		do {
+			chute = Integer.parseInt(JOptionPane.showInputDialog("Descubra o número"));
+			contador= contador+1;
+			//contador++;
+			//contador+=1;
+			if (numero>chute) {
+				JOptionPane.showMessageDialog(null, "O número é maior!!!");
+			}else if(numero<chute) {
+				JOptionPane.showMessageDialog(null, "O número é menor!!!");
+			}
+			
+		}while(numero!=chute);
+		
+		JOptionPane.showMessageDialog(null, "Parabéns você acertou com " + contador + " tentativa(s)!");
+			
+		
+		//=========================================================
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Jogador 1, digite um número aleatório"));
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Jogador 2, tente acertar o valor digitado pelo jogador 1"));
+		int tentativas = 1;
+		
+		while (num2!=num1) {
+			if (num2<num1) {
+				num2 = Integer.parseInt(JOptionPane.showInputDialog("O número digitado é menor, tente acertar o valor digitado pelo jogador 1"));
+								
+			}else {
+				num2 = Integer.parseInt(JOptionPane.showInputDialog("O número digitado é maior, tente acertar o valor digitado pelo jogador 1"));
+				
+			}
+				tentativas = tentativas + 1;
+			
+		}
+		JOptionPane.showMessageDialog(null, "Parabéns você acertou com " + contador + " tentativa(s)!");
+		
+	
+		
+	}
+
+}

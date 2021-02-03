@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+/home/mulotto/Projetos/turma14c_projetos/git/turma14c/.metadata/.plugins/org.eclipse.jdt.core
+2516571728.index
+2636145384.index
+905222108.index
+1432350473.index
+1117461127.index
+2953509316.index
+1474064946.index
+228695552.index

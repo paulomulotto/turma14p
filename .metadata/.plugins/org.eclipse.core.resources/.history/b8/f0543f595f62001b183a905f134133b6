@@ -1,0 +1,84 @@
+package br.com.universidade.beans;
+
+/*
+ * Design Pattern: define as melhores práticas para POO
+ * Uma das práticas: DTO (Data Transfer Object) = atua sobre a representação das classes 
+ * do Diagrama de Classes.
+ * Sugestões:
+ * 1º TODOS os atributos devem ser privados
+ * 2º CADA atributo deve possuir um método individual GETTER e SETTER
+ * 3º TODO modelo deve possuir no mínimo: 2 Construtores:
+ * - vazio
+ * - permite preencher todo o objeto (cheio) 
+ * 
+ */
+
+public class Aluno {
+
+	private int rm;
+	private String email;
+	private String nome;
+	
+	public void setAll(int rm, String email, String nome) {
+		this.rm=rm;
+		this.email=email;
+		this.nome=nome;
+	}
+	
+	public String getUsuario() {
+		if (email.contains("@")) {
+			return email.substring(0,email.indexOf("@"));
+		}
+		return email;
+	}
+	
+	/*
+	 * Metodos para:
+	 * retornar o usuário do email => getUsuario()
+	 * preencher todos os dados do aluno => setAll()
+	 */
+	
+	public String getAll() {
+		return "RM: " + getRm() + "\nNome: " + nome + "\nEmail: " + email;
+	}
+	
+	
+	public int getRm() {
+		return rm;
+	}
+	public void setRm(int rm) {
+		this.rm = rm;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

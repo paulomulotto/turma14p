@@ -1,0 +1,26 @@
+package br.com.excecao.teste;
+
+public class TesteExcecao {
+
+	public static void main(String[] args) {
+		try {
+			int numero = Integer.parseInt("1c");
+		
+			System.out.println("Numero: " + numero);
+			
+			String palavra = null;
+			System.out.println("Qtde letras: " + palavra.length());
+		}
+		catch(NullPointerException e) {
+			System.out.println("Existe um dado nulo");
+		}
+		catch(NumberFormatException e) {
+			System.out.println("Número Invalido");
+		}
+		catch(Exception e) {
+			System.out.println("Deu ruim");
+			e.printStackTrace();
+		}
+	}
+
+}

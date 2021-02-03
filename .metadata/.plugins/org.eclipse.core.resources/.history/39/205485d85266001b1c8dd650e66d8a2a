@@ -1,0 +1,12 @@
+package br.com.votacao.principal;
+
+import br.com.votacao.beans.Urna;
+
+public class ImplementarVoto {
+
+	public static void main(String[] args) {
+		Urna urna = new Urna();
+
+	}
+
+}

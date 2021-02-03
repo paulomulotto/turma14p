@@ -1,0 +1,16 @@
+package br.com.excecao.teste;
+
+public class TesteExcecao {
+
+	public static void main(String[] args) {
+		try {
+			int numero = Integer.parseInt("xpto");
+		
+			System.out.println("Numero: " + numero);
+		}
+		catch(Exception e) {
+			System.out.println("Deu ruim");
+		}
+	}
+
+}

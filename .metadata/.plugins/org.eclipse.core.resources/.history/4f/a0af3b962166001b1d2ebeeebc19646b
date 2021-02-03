@@ -1,0 +1,11 @@
+package br.com.excecao.teste;
+
+public class TesteExcecao {
+
+	public static void main(String[] args) {
+		int numero = Integer.parseInt("1");
+		
+		System.out.println("Numero: " + numero);
+	}
+
+}
