@@ -29,7 +29,7 @@ public class ImplementarVoto {
 		
 		
 		System.out.println("O total de votos é: " + urna.totalVotos());
-		
+		System.out.println("O total de votos é: ");
 
 	}
 
